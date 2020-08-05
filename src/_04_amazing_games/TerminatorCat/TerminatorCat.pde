@@ -51,7 +51,13 @@ fill(#FF0000);
 // 10 Use the ellipse() command to draw a circle on the eye (you will have to guess its size). 
 //    Use the x and y variables you just created to place the ellipse in the correct location.
 //                  The ellipse command looks like this:
-                ellipse(x, y,50,25);
+                ellipse(x, y,-25,50);
+                ellipse(x-50,y-5,-25,50);
+               if(y>height) { 
+                 background(cat);
+             x=239;
+           y=115;
+         }
 // Run the program to make sure it is in the right place and is the right size.
 }
 
@@ -59,8 +65,8 @@ fill(#FF0000);
 //      the space bar. Run the program to test it.
 //      If you want it to move to the left, change to x-1=.
 void keyPressed() {
-    x+=1;
-    y+=1;
+    x+=-1;
+    y+=6;
     
 // 12.  If you want them to go faster, add more than one each time the key is pressed    
 }
